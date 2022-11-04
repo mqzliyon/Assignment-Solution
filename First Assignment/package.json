@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "Mushfiquzzaman Liyon",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
