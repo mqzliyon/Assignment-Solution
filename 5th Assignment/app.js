@@ -1,19 +1,25 @@
+// Basic Lib Import
 const express = require('express');
 const app = express();
 require('dotenv').config();
-const mongoose = require('mongoose');
 const {router} = require('./src/routes/api');
 
-// Package Import
+// Security Lib Import
 const helmet = require('helmet');
-const mongooseSanitizer = require('mongoose-sanitizer');
+const mongooseSanitizer = require('express-mongo-sanitize');
 const bodyParser = require('body-parser');
+const hpp = require('hpp');
+const xss = require('xss-clean')
 
-// Package Implement
+// Security Lib Implement
 app.use(helmet());
 app.use(bodyParser.json());
-app.use(mongooseSanitizer);
+app.use(hpp());
+app.use(xss());
+app.use(mongooseSanitizer());
 
+// Database Lib Import
+const mongoose = require('mongoose');
 
 // rate limiter setup
 const rateLimiter = require('express-rate-limit');
@@ -36,11 +42,13 @@ mongoose.connect(Uri,OPTION,(error)=>{
     }
 })
 
+
+app.use('/api/v1',router);
+
+
 // Undefined route
 app.use('*',(req,res)=>{
     res.status(404).json({status: '404',data: 'Page not found'});
 })
-
-app.use('/api/v1',router);
 
 module.exports = {app};
