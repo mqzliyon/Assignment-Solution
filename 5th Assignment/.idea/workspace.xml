@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b97ddb92-15c4-4cec-a486-49d949bac125" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoggingController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LoggingController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProfileController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProfileController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,7 @@
       <workItem from="1673075077108" duration="5842000" />
       <workItem from="1673373116087" duration="1456000" />
       <workItem from="1673524986635" duration="2779000" />
-      <workItem from="1673533803147" duration="2702000" />
+      <workItem from="1673533803147" duration="5235000" />
     </task>
     <servers />
   </component>
